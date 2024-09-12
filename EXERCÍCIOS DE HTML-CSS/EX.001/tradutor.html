@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Translator</title>
+<style>
+boby {
+    background-color: aquamarine;
+}
+
+h1 {
+    text-align: center;
+    color: pink;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:x-large
+    
+}
+p {
+  color: palegreen;
+  text-align: center;
+} 
+</style>
+</head>
+<body>
+    <h1 style:="font-size:80px">Seja bem vindo ao meu tradutor espero que venhamos te ajudar.</h1>
+    <p>Digite o texto que você quer traduzir por gentileza.</p>
+    <input type="text" id="inputText" placeholder="Digite o texto a ser traduzido">
+    <select id="selectLanguage">
+        <option value="en">Inglês</option>
+        <option value="es">Espanhol</option>
+        <!-- Adicione outras opções de idioma aqui -->
+    </select>
+    <button onclick="translate()">Traduzir</button>
+    <div id="translatedText"></div>
+
+    <script>
+        function translate() {
+            const text = document.getElementById('inputText').value;
+            const targetLanguage = document.getElementById('selectLanguage').value;
+            fetch('http://localhost:5000/translate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ text: text, target_language: targetLanguage })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('translatedText').innerText = data.translated_text;
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens e Midias</title>
+    <link rel="shortcut icon" href="fvi.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Trabalhando com Imagens Dinâmicas.</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua a janela do navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="4079735324_1.webp" type="image/webp">
+        <source media="(max-width:1000px)" srcset="dog-4623304_960_720.jpg" type="image/jpeg">
+        <img src="ilha-grande-rio-de-janeiro-capa2019-01.jpg" alt="Imagem da Ilha Grande, Rio de Janeiro">
+    </picture>
+    <h1 style="color: aquamarine;">Reproduzindo Aúdio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop> <!--Qunado você quiser usar algum aúdio em html use os parâmetros 'autoplay controls' e caso queira que a música não pare basta apenas usar outro parâmetro de loop.-->
+        <source src="midia/musica_arabe.mp3.mp3" type="audio/mpeg">
+        <source src="midia/movemen.ogg.mp3" type="audio/mpeg">
+        <source src="midia/winter-poem.wav.mp3" type="audio/mpeg"> <!--Procure não usar o arquivo 'WAV' pois eles exigem uma grande quantidade de memória.-->
+    </audio>
+    <!--O Html5 tem esses três formatos para formatação de arquivo para aúdios como : MP3 WAV OGG-->
+    <p>Infelizmente o seu navegador não consegue reproduzir aúdios acesse o link <a href="midia/musica_arabe.mp3.mp3">MANODOGRAU</a></p>
+</body>
+</html>
