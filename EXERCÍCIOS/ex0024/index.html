@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTUDANDO TABELAS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px black;
+            width: 100%;
+        }
+        table, td , th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        th{
+            background-color: hsl(0, 0%, 90%);
+        }
+        tr:nth-child(odd){
+            background-color: #dfd3d3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Informações Pessoais</h1>
+    <table>
+        <tr>
+            <th>NOME</th>
+            <th>IDADE</th>
+            <th>ESTADO</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>25</td>
+            <td>São Paulo</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>30</td>
+            <td>Rio de Janeiro</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>22</td>
+            <td>Minas Gerais</td>
+        </tr>
+    </table>
+</body>
+</html>
