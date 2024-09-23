@@ -31,7 +31,11 @@ nav > a {
    margin-right: 10px;
    margin-top: 15px;
    padding: 10px;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Oswald', Helvetica, sans-serif;
+   white-space: nowrap;
+}
+nav{
+   text-align: center;
 }
 a:hover{
    background-color: var(--cor3);
@@ -45,7 +49,7 @@ header {
    background-image: linear-gradient(to top,#1a5c37, #2fa866);
    opacity: 1.5;
    width: 100%;
-   min-height: 36vh;
+   min-height: 38vh;
    margin: 0; 
    margin-bottom: 20px;
    display: flex;
@@ -58,7 +62,7 @@ h1{
    text-align: center;
    margin-bottom: 20x;
    padding-top: 20px;
-   font-size: 2em;
+   font-size: 2rem;
    text-shadow: 1px 2px  rgba(0, 0, 0, 0.726);
 }
 header > p{
@@ -77,16 +81,15 @@ main > h2{
 }
 main{
    background-color: #ffffff;
-   margin: auto;
    border-top-left-radius: 0px;
    border-top-right-radius: 0px;
    border-bottom-left-radius: 10px;
    border-bottom-right-radius: 10px;
-   margin: 60px;
+   margin: 2vw;
    box-shadow: 0px 2px 2px 2px  #000000;
    margin-top: 3px;
    margin-bottom: 30px;
-   padding: 20px;
+   padding: 2vw;
 }
 main > p{
    color: #000000;
@@ -137,10 +140,6 @@ footer > p{
    text-align: center;
    color: #ffffff;
 }
-/*main > img{
-   vertical-align: middle;
-   padding: 10px;
-}*/
 .video{
    background-color: var(--cor5);
    width: 100%;
@@ -172,7 +171,7 @@ li{
    border-radius: 10px;
    color: #000000;
    list-style-type: '✓';
-   padding: 0 10px;
+   padding: 0 1px;
 }
 article > p{
    color: #000000;
@@ -184,7 +183,8 @@ article > p{
 }
 .listas{
    display: flex;
-   gap: 50px;
+   flex-wrap: wrap;
+   gap: 10px 20px;
 }
 article{
    background-color: rgb(131, 225, 173);
@@ -202,7 +202,7 @@ picture{
    min-width: 260px;
 }
 main .pequena{
-   max-width: 350px;
+   max-width: 80%;
    display: block;
    margin: auto;
 }
