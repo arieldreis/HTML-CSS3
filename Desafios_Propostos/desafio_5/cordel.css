@@ -1,0 +1,87 @@
+@charset "UTF-8";
+:root{
+    --cor1:#000000;
+    --cor2:#ffffff;
+    --cor3:#0000006b;
+}
+@font-face {
+    font-family: 'Passion One';
+    src: url(Passion_One/PassionOne-Bold.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'regular';
+    src: url(Sriracha/Sriracha-Regular.ttf) format(truetype);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:var(--cor2);
+}
+header{
+    background-color: var(--cor1);
+}
+h1{
+    font-family: 'Passion One';
+    margin: 0;
+    color: var(--cor2);
+    font-size: 8vw;
+    text-align: center;
+    margin-bottom: -30px;
+    padding: 20px;
+}
+.tamanho{
+    color: var(--cor2);
+    font-size: 10vw;
+}
+nav{
+    text-align: center;
+}
+a{
+    margin-bottom: 20px;
+    color: var(--cor2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+a:hover{
+    text-decoration: underline;
+}
+p{
+    color: var(--cor2);
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer{
+    color: var(--cor2);
+    background-color: var(--cor1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px;
+    font-size: 2vw;
+}
+section > p{
+    font-family: 'regular';
+    color: var(--cor1);
+    padding: 20px;
+    font-size: 3.5vw;
+}
+.imagem1{
+    background-image: url(pacote-d012/imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.cores{
+    color: var(--cor2);
+    background-color: var(--cor3);
+    margin: 20px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.imagem2{
+    background-image: url(pacote-d012/imagens/background002.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
