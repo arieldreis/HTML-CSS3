@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px ;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        tfoot{
+            background-color: gray;
+            color: white;
+        }
+        tr:nth-child(even){
+            background-color: lightgray;
+        }
+        .numero{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ESTADO</th>
+                <th>POPULAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> São Paulo</td>
+                <td class="numero">46.649.132</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21.911.848</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16.045.672</td>
+            </tr>
+            <tr>
+                <td>Espiríto Santo</td>
+                <td class="numero">4.297.599</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="numero">983.484</td>
+            </tr>
+            <tr>
+                <td>Amápa</td>
+                <td class="numero">889.186</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">4.269.995</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">9.277.727</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="numero">1.857.045</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="numero">669.674</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="numero"> 1.607.363</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="numero">3.368.201</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.852.069</td>
+            </tr>
+            <tr>
+                <td>Ceára</td>
+                <td class="numero">9.560.454</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">7.261.618</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="numero"> 4.053.569</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="numero">9.674.793</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="numero">3.264.531</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="numero">3.560.903</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="numero">2.338.474</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="numero">3.284.999</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numero">7.242.142</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="numero">3.828.367</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="numero">2.913.359</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11.488.559</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">12.084.745</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7.679.289</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="numero"><strong>214.914.797</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        let soma = (46649132 + 21911848+16045672+4297599+983484+889186+4269995+9277727+1857045+669674+1607363+3368201+14852069+9560454+7261618+4053569+9674793+3264531+3560903+2338474+3284999+7242142+3.828367+2913359+11488559+12084745+7679289);
+        console.log(`O valor dessa soma é igual a ${soma}`);
+    </script>
+</body>
+</html>
