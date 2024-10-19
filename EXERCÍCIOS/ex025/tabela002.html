@@ -23,23 +23,34 @@
             color: white;
         }
         tfoot{
-            background-color: gray;
+            background-color: #313030;
             color: white;
         }
         tr:nth-child(even){
-            background-color: lightgray;
+            background-color: #BFBFBF;
         }
         .numero{
             text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color:  #737373;
+            color: white;
+            padding: 10px;
+        }
+        .cor-cinza{
+            background-color: #313030;
         }
     </style>
 </head>
 <body>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÃO</th>
+                <th scope="col" class="cor-cinza">ESTADO</th>
+                <th scope="col" style="width: 100px;" class="cor-cinza">POPULAÇÃO</th>
             </tr>
         </thead>
         <tbody>
@@ -154,7 +165,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="col">Total de Habitantes</th>
                 <td class="numero"><strong>214.914.797</strong></td>
             </tr>
         </tfoot>
