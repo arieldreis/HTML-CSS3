@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Não Responsiva</title>
+    <style>
+        /* Definindo largura fixa para a tabela */
+        table {
+            width: 1000px; /* Largura fixa */
+            table-layout: fixed;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilização das células */
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        /* Cores de cabeçalho */
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Alternando cores nas linhas */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Tabela Não Responsiva</h2>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Coluna 1</th>
+                    <th>Coluna 2</th>
+                    <th>Coluna 3</th>
+                    <th>Coluna 4</th>
+                    <th>Coluna 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de exemplo -->
+                <tr>
+                    <td>Dado 1</td>
+                    <td>Dado 2</td>
+                    <td>Dado 3</td>
+                    <td>Dado 4</td>
+                    <td>Dado 5</td>
+                </tr>
+                <tr>
+                    <td>Dado 6</td>
+                    <td>Dado 7</td>
+                    <td>Dado 8</td>
+                    <td>Dado 9</td>
+                    <td>Dado 10</td>
+                </tr>
+                <!-- Adicione mais linhas conforme necessário -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

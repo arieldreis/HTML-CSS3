@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            border: 1px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 500px;
+        }
+        td , th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption{
+            font-weight: bolder;
+            font-size: 1.3em;
+            padding: 10px;
+        }
+        .csexo{
+            background: greenyellow;
+        }
+        .cnome{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome"> <!--span="2"-->
+            <col class="csexo">
+            <col class="cnome">
+            <col class="csexo">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>25</td>
+            <td>Feminino</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ariel Marinho</td>
+            <td>15</td>
+            <td>Maculino</td>
+            <td>Estudante de DS</td>
+        </tr>
+        <tr>
+            <td>Caroline Marinho</td>
+            <td>22</td>
+            <td>Feminino</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr>
+            <td>Juvenildes Pereira</td>
+            <td>48</td>
+            <td>Maculino</td>
+            <td>Metalúrgico</td>
+        </tr>
+        <tr>
+            <td>Gustavo Guanabara</td>
+            <td>41</td>
+            <td>Masculino</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio Oliveira</td>
+            <td>44</td>
+            <td>Masculino</td>
+            <td>Desenvolvedor</td>
+        </tr>
+    </table>
+</body>
+</html>
