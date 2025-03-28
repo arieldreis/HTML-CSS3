@@ -130,4 +130,5 @@ ul{
 .containerImg > img{
     max-width: 20%;
     height: 5vh;
+    border-radius: 5px;
 }
