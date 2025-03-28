@@ -121,3 +121,13 @@ ul{
     color: rgb(229, 9, 9);
     font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
+.containerImg{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.containerImg > img{
+    max-width: 20%;
+    height: 5vh;
+}
