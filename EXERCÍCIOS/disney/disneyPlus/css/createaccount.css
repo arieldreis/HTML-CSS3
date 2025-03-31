@@ -5,8 +5,8 @@
     padding: 0;
 }
 :root{
-    --cor1: rgb(5, 92, 107);
-    --cor2: rgb(5, 25, 41);
+    --cor1: rgb(5, 69, 84);
+    --cor2: rgb(5, 32, 48);
     --cor3: white;
     --cor4: black;
     --cor5: rgb(103, 104, 109);
@@ -19,7 +19,7 @@
     font-weight: bold;
 }
 body{
-    background: linear-gradient(90deg, var(--cor1), var(--cor2));
+    background: linear-gradient(180deg, var(--cor1), var(--cor2));
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -61,55 +61,22 @@ form > h2{
 form > p{
     color: var(--cor5);
     margin-top: 20px;
-    margin-bottom: 30px;
 }
 small{
     color: var(--cor5);
 }
-.input-container {
-    position: relative;
-    width: 100%;
-    max-width: 700px;
-    margin: 20px 0;
-}
-
-.input-container input {
-    font-family: "Oswald", Arial, Helvetica, sans-serif;
-    padding: 20px;
+input[type="email"], input[type="password"]{
+    padding: 25px;
     border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background: var(--cor6);
     outline: none;
     border: none;
-    font-size: 1em;
-    transition: all 0.3s ease-in-out;
-    width: 100%;
+    width: 89%;
 }
-
-.input-container label {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: var(--cor3);
-    padding: 0 5px;
-    color: var(--cor5);
-    border-radius: 5px;
-    font-size: 16px;
-    transition: all 0.3s ease-in-out;
-    pointer-events: none; /* Impede que o label interfira no clique */
-}
-
-/* Efeito ao focar ou quando já tem texto */
-.input-container input:focus,
-.input-container input:valid {
-    border: none;
-}
-.input-container input:focus + label,
-.input-container input:valid + label {
-    top: 0;
-    left: 10px;
-    font-size: 14px;
-    color: var(--cor1);
+input[type="email"]:focus, input[type="password"]:focus{
+    outline: none;
 }
 button{
     width: 100%;
@@ -159,17 +126,10 @@ ul{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    border-radius: 5px;
 }
 .containerImg > img{
-    max-width: 100px; /* Define um tamanho máximo */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 20%;
+    height: 5vh;
     border-radius: 5px;
-    flex: 0 1 auto; /* Permite que as imagens se ajustem melhor ao espaço disponível */
-}
-.fonte{
-    font-family: "Oswald", Arial, Helvetica, sans-serif;
-}
-h3{
-    color: red;
 }
