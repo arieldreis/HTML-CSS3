@@ -126,6 +126,7 @@ ul{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    border-radius: 5px;
 }
 .containerImg > img{
     max-width: 20%;
