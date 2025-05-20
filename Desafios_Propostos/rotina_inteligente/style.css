@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+:root {
+    --cor1: white;
+    --cor2: green;
+    --cor3: black;
+    --cor4: lightgray;
+    --cor5: red;
+}
+
+body {
+    background-color: var(--cor4);
+    color: var(--cor3);
+    font-family: "Jersey 15", 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header > h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid var(--cor3);
+    border-radius: 4px 0px 0px 4px;
+    font-size: 1em;
+    font-family: "Jersey 15", 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--cor2);
+}
+
+button {
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 0px 4px 4px 0px;
+    border: none;
+    background-color: var(--cor2);
+    font-family: "Jersey 15", 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: var(--cor1);
+    font-size: 1em;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(112, 206, 18);
+}
+
+/* Estilo para os itens da lista de tarefas */
+.item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.item-1 {
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--cor5);
+    font-family: "Jersey 15", 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: var(--cor1);
+    transition: 0.3s ease-in-out;
+}
+
+.item-1:hover {
+    background-color: rgb(146, 7, 7);
+}
+/* div{
+    background-color: var(--cor1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+} */
