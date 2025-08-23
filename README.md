@@ -9,7 +9,6 @@ Este é um dos meus primeiros projetos em **HTML e CSS**, criado para praticar *
 - ✅ Estilização com **CSS3**  
 - ✅ Cabeçalho, rodapé e seções de conteúdo  
 - ✅ Layout simples e responsivo
-- ✅ Responsividade
 - ✅ Flex-Box
 
 ---
