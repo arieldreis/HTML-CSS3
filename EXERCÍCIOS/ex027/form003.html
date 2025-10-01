@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="userid">Nome: </label>
+            <input type="text" name="nomeUser" id="userid" 
+            placeholder="Digite seu nome" required 
+            maxlength="40" autocomplete="name">
+        </p>
+        <p>
+            <label for="mediaid">Média: </label>
+            <input type="number" name="media" id="mediaid" required 
+            min="0" max="10" step="0.1" placeholder="0 á 10">
+        </p>
+        <p>
+            <label for="idmes">Período: </label>
+            <input type="month" name="month" id="idmes">
+        </p>
+        <p>
+            <label for="examId">Dia da Prova: </label>
+            <input type="date" name="exam" id="examId">
+        </p>
+        <p>
+            <label for="timeId">Horário: </label>
+            <input type="time" name="time" id="timeId">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
