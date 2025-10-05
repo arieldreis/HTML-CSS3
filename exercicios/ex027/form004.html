@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulários com telefone e e-mail</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Dados</legend>
+            <p>
+                <label for="idemail">E-mail: </label>
+                <input type="email" name="email" id="idemail">
+            </p>
+            <p>
+                <label for="idtel">Telefone: </label>
+                <input type="tel" name="tel" id="idtel" autocomplete="tel-national" pattern="^[0-9]{4}-[0-9]{4}$">
+            </p>
+            <p>
+                <input type="button" value="Adicionar telefone">
+                <input type="reset" value="Cancelar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

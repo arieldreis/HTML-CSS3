@@ -1,0 +1,38 @@
+@charset "UTF-8";
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.meu-circulo{
+  stroke: red;
+  fill: green;
+  stroke-width: 55;
+  cursor: pointer;
+}
+.meu-circulo:hover{
+  fill: lightgreen;
+}
+.meu-quadrado{
+  stroke: blue;
+  fill: yellow;
+  stroke-width: 55;
+  cursor: pointer;
+}
+.meu-quadrado:hover{
+  fill: lightyellow;
+}
+.meu-triangulo{
+  stroke: purple;
+  fill: orange;
+  stroke-width: 55;
+  cursor: pointer;
+}
+.meu-triangulo:hover{
+  fill: lightsalmon;
+}
