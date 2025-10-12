@@ -13,3 +13,9 @@ html{
 menu{
     display: none;
 }
+article{
+    width: 100%;
+}
+article::before{
+    content: "Esse artigo foi impresso através do site www.exemplo.com.br"; 
+}
