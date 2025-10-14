@@ -55,6 +55,22 @@ h2{
     text-align: center;
     margin-bottom: 20px;
 }
+.btnConatiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.btnConatiner > button{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+    
 @media (max-width: 700px){
     header{
         padding: 0;
