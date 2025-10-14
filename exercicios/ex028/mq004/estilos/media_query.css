@@ -1,5 +1,55 @@
 @charset "UTF-8";
-/*Todas as demais midias*/
-@media screen {
-    
+/* Todas as demais midias */
+
+/* Typical Device BreakPoints 
+Celular: 600px até 768px
+Tablets: 768px até 992px
+Notebooks: 992px até 1200px
+Desktops: 1200px até 1600px
+TVs: acima de 1600px
+*/
+@media print {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+    main{
+        border: 1px solid black;
+    }
+    main::after{
+        content: " - Impresso em papel";
+        text-decoration: overline;
+        font-size: 0.8em;
+    }
 }
+@media screen and (min-width: 768px) and (max-width: 992px){ 
+    /*Tablets*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+        img#tablet{ display: block; }
+        img#phone{ display: none; }
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    /*Desktops*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+        img#phone{ display: none; }
+        img#pc{ display: block; }
+    }
+}
+@media screen and (min-width: 1200px){
+    /*Grandes Telas*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+        img#phone{ display: none; }
+        img#tv{ display: block; }
+    }
+    main{
+        width: 700px;
+    }
+}
+    
