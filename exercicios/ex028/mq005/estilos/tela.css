@@ -64,11 +64,14 @@ h2{
 .btnConatiner > button{
     padding: 10px;
     font-size: 20px;
-    border-radius: 10px;
     border: none;
     background-color: black;
     color: white;
     cursor: pointer;
+    width: 100%;
+}
+.btnConatiner > button:hover{
+    background-color: rgb(83, 77, 77);
 }
     
 @media (max-width: 700px){
